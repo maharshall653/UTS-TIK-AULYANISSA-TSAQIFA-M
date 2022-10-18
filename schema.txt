@@ -1,0 +1,59 @@
+//// -- LEVEL 1
+//// -- Schemas, Tables and References
+
+// Creating tables
+// You can define the tables with full schema names
+Table Home {
+  id_user int [pk, increment] // auto-incrementt
+  id_materi varchar
+  id_vidio_pembelajaran varchar
+  id_latihan varchar
+  id_about_me varchar
+}
+
+Table User {
+  id_user int [pk, increment] // auto-incrementt
+  nama_pengguna varchar
+}
+
+Table Materi {
+  id_materi int [pk, increment] // auto-incrementt
+  id_modul varchar
+  materi_trigonometri_ukuran_sudut varchar
+  materi_trigonometri_ukuran_suduttrigonometri_konsep_dasar_sudut varchar
+  materi_rasio_trigonometri varchar
+}
+
+Table Vidio_Pembelajaran {
+  id_vidio_pembelajaran int [pk, increment] // auto-incrementt
+  vid_trigonometri_ukuran_sudut varchar
+  vid_trigonometri_konsep_dasar_sudut varchar
+  vid_rasio_trigonometri varchar
+}
+
+Table Latihan {
+  id_latihan int [pk, increment] // auto-incrementt
+  latihan1_trigonometri_ukuran_sudut varchar
+  latihan2_trigonometri_konsep_dasar_sudut varchar
+  latihan3_rasio_trigonometri varchar
+}
+
+Table About_Me {
+  id_about_me int [pk, increment] // auto-incrementt
+}
+
+Table Modul {
+   id_modul varchar [pk, increment] // auto-incrementt
+}
+
+Ref: "User"."id_user" < "Home"."id_user"
+
+Ref: "Home"."id_materi" < "Materi"."id_materi"
+
+Ref: "Home"."id_vidio_pembelajaran" < "Vidio_Pembelajaran"."id_vidio_pembelajaran"
+
+Ref: "Home"."id_latihan" < "Latihan"."id_latihan"
+
+Ref: "Home"."id_about_me" < "About_Me"."id_about_me"
+
+Ref: "Materi"."id_modul" < "Modul"."id_modul"
