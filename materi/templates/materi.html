@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: rgb(223, 189, 221);">TRIGONOMETRI</h2>  
+    </center>
+
+    <p></p>
+    <center><img src="https://drive.google.com/uc?export=view&id=15byMhEUVDEPCjzA4iO_LHYOnQUD2teAo" alt="Logo Untirta" width="500px"></center> 
+    <p></p>
+    
+    <justify>
+    <p style="font-family: 'Sitka Heading'">Pernahkah Kalian melihat seorang sedang mengukur jalan yang akan diperbaiki atau mengukur ketinggian sebuah gedung? Tahukah kalian bagaimana seorang Nakhoda kapal memperkirakan jarak antara kapal dengan pelabuhan atau pantai atau dengan kapal lain sehingga kapalnya tidak bertabrakan? Bagaimana seorang ahli kelautan mengukur kedalaman Samudra, ketinggian ombak atau seorang Astronom mengukur jarak bintang? Para ahli tersebut bekerja menggunakan perhitungan Trigonometri. Aktivitas pengukuran tersebut hanya sebagian dari penerapan trigonometri dalam kehidupan nyata.
+    <p style="font-family: 'Sitka Heading'">Secara sederhana, menggunakan trigonometri berarti melakukan penghitungan yang berkaitan dengan sudut. Trigonometri sering digunakan oleh surveyor, astronot, ilmuwan, enginer, bahkan juga digunakan untuk kegiatan investigasi. Dalam bidang fisika, teknik, dan kedokteran, trigonometri mengambil peranan penting dalam pengembang teknologi kedokteran dan teori-teori fisika dan teknik. Dalam Matematika, trigonometri digunakan untuk menemukan relasi antara sisi dari sudut pada suatu segitiga.</p>
+    <p style="font-family: 'Sitka Heading'">Setelah membaca paparan di atas, Kalian bisa mengetahui betapa luasnya penggunaan Trigonometri dalam kehiduapan nyata. Bagaimana, menarikkan? Mudah-mudahan Kalian termotivasi untuk mempelajari lebih dalam Trigonometri, khususnya belajar matematika sebagai tarunya ilmu pengetahuan.</p>    
+    </justify>
+
+    <center>
+        <h2 style="background-color: rgb(223, 189, 221);">Rekomendasi Bacaan</h2> 
+    </center>
+
+    <justify>
+        <p style="font-family: 'Sitka Heading'">Pada pembelajan Trigonometri di kelas X SMA, materi ini termasuk pada pembelajaran Matematika Umum. Adapun sub materi-materi yang akan dibahas pada materi Trigonometri yaitu meliputi Ukuran Sudut dan Konsep Dasar Sudut dan Rasio/Perbandingan Trigonometri Pada Segitiga Siku-Siku. Q! LEARN merekomendasikan modul untuk pembelajaran Trigonometri kali ini. Kalian dapat mengakses modul pembelajaran di bawah ini, ya!! Happy a good study, Q! LEARN'S.
+    
+    <center>
+        <iframe src="https://drive.google.com/file/d/1IS2nAI44y1thuDGW6x1o8YcK1ThwH4-n/preview" width="640" height="480" allow="autoplay"></iframe>
+    </center>
+
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

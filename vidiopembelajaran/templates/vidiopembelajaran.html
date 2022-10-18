@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: rgb(223, 189, 221);">VIDIO PEMBELAJARAN</h2>  
+    </center>
+
+    <justify>
+        <p style="font-family: 'Sitka Heading'">Hi, Q! LEARN'S. Setelah kalian mendapatkan modul pembelajaran di halaman materi, selanjutnya kalian akan mendapatkan vidio pembelajaran untuk meningkatkan pemahaman kalian.</p>
+        <p style="font-family: 'Sitka Heading'">Berikut ini kami cantumkan beberapa vidio terkait pembelajaran kita di materi Trigonometri</p>
+        <p style="font-family: 'Sitka Heading'">Happy Watching, Q! LEARN'S</p>
+    </justify>
+
+    <p>
+    <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2iTbfPEMCeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p align="center" class="style8"> Vidio Perbandngan Trigonometri</p>
+    </center>
+    </p>
+
+    <p>
+        <center>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/h5HoV7mDXSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p align="center" class="style8"> Vidio Aturan Sinus, Cosinus, dan Luas Segitiga</p>
+        </center>
+        </p>
+
+    <p>
+    <center>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-Y4w7E-cgWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p align="center" class="style8"> Vidio Menentukan Nilai Trigonometri Sudut Istimewa</p>
+    </center>
+    </p>
+
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}
+

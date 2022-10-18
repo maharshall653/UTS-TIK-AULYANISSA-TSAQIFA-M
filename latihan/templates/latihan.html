@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: rgb(223, 189, 221);">LATIHAN TRIGONOMETRI</h2>
+    </center>
+
+    <P style="font-family: 'Sitka Heading'">Hii, Q! LEARN'S. Setelah kalian memerlajari modul pada menu materi, sekarang kita mau ngajak kalian untuk bisa mendalami dan mengetahu seberapa paham kalian pada materi Trigonometri.</P>
+    <p style="font-family: 'Sitka Heading'">Latihan kali ini kalian bisa membuka link yang sudah disediakan oleh kami, ya!</p>
+    
+    <p>
+    <center>
+        <iframe width="560" height="315" src="https://quizizz.com/admin/quiz/5e723144792452001ba9adcf/latihan-trigonometri-kelas-10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p align="center" class="style8"> Latihan Trigonometri</p>
+    </center>
+    </p>
+
+    <p>
+    <center>
+        <iframe width="560" height="315" src="https://quizizz.com/admin/quiz/5e303da164b7a2001c1ce898/ulangan-trigonometri-kelas-x" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p align="center" class="style8"> Latihan Trigonometri</p>
+    </center>
+    </p>
+
+    <p>
+        <center>
+            <iframe width="560" height="315" src="https://quizizz.com/admin/quiz/5e7eb4ccf6dbec001b2d551e/soal-trigonometri-kelas-x" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p align="center" class="style8"> Latihan Trigonometri</p>
+        </center>
+        </p>
+
+    
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}

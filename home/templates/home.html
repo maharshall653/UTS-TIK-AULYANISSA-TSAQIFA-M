@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <center>
+        <h2 style="background-color: rgb(223, 189, 221);">HOME</h2> 
+    </center>
+
+    <justify>
+    <body background = "https://drive.google.com/uc?export=view&id=1fTLeIVdHxiBXnM2eTF_Vmw8LqiFVdpey"></body>
+    </justify>
+    
+    
+    {% for judul in jdl %}
+        <li>{{ judul }}</li>
+    {% endfor %}
+    </p>
+
+{% endblock %}
